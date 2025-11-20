@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamika Snack Lab</title>
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-premium: #1f2937;
+            --color-gourmet: #e85d04;
+        }
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-premium {
+            background-color: var(--color-premium);
+        }
+        .text-gourmet {
+            color: var(--color-gourmet);
+        }
+        .bg-gourmet {
+            background-color: var(--color-gourmet);
+        }
+
+        .sticky-cta {
+            z-index: 50;
+        }
+
+        .hero-bg {
+            background-image: url('./image/01.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bg-premium-87 {
+            background-color: rgba(31, 41, 55, 0.87); 
+        }
+      
+        .divider-line {
+            border-top: 1px solid #e5e7eb;
+            margin-left: -2rem;
+            margin-right: -2rem;
+        }
+        
+        .grid-auto-adjust {
+            align-items: start;
+        }
+
+        html {
+            scroll-padding-top: 2rem; 
+        }
+
+    </style>
+</head>
+
+<body class="font-inter bg-white text-gray-800">
+
+    <!-- Botón CTA Fijo (Encabezado) -->
+    <header class="sticky top-0 sticky-cta bg-white/95 backdrop-blur-sm shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-premium">Yamika <span class="text-gourmet">Snack Lab</span></h1>
+            <a href="#paquetes" class="px-5 py-2 bg-gourmet text-white font-semibold rounded-lg hover:bg-opacity-90 transition duration-300">
+                Ver Opciones
+            </a>
+        </div>
+    </header>
+
+    <!-- 1. Elementos Superiores-->
+    <main>
+        <section class="h-96 md:h-screen flex items-center justify-center p-4 hero-bg">
+            <div class="p-8 md:p-12 max-w-4xl text-center rounded-xl shadow-2xl bg-premium-87 backdrop-blur-sm">
+                <h2 class="text-4xl md:text-6xl font-extrabold leading-tight text-white mb-4">
+                    <span class="font-normal">De "Snacks" a</span> <span class="font-extrabold text-white">Experiencia Gourmet</span>
+                </h2>
+                <p class="text-xl md:text-2xl text-gray-200 font-medium">
+                    Un Sistema de Marca para resolver la dualidad (Elegante y Divertido).
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. Sección "Inmersión Estratégica"-->
+        <section class="bg-premium text-white px-4 py-16 md:py-24">
+            <div class="container mx-auto max-w-6xl">
+                <div class="text-center mb-12">
+                    <span class="text-gourmet font-bold uppercase tracking-widest">Valor</span>
+                    <h3 class="text-3xl md:text-4xl font-normal mt-2">
+                        La Estrategia de Marca <span class="font-extrabold">Yamika</span>
+                    </h3>
+                    <p class="mt-4 text-lg text-gray-300">
+                        La solicitud es para un logo, pero la inmersión estratégica revela la complejidad de tu visión. El proceso se centra en entregar una solución estratégica, no solo una imagen. Esto es lo que justifica tu inversión y valor.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Punto 1 -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-gourmet text-center">
+                        <div class="text-3xl text-gourmet mb-3">
+                            <span class="material-icons text-5xl">star</span>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2 text-gourmet">Premium con un Toque Cercano</h4>
+                        <p class="text-gray-600">La marca requiere un posicionamiento de doble impacto. El diseño se compromete a equilibrar la Garantía de Calidad Premium con la Cercanía y Diversión de la experiencia.</p>
+                    </div>
+
+                    <!-- Punto 2-->
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-gourmet text-center">
+                        <div class="text-3xl text-gourmet mb-3">
+                            <span class="material-icons text-5xl">construction</span>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2 text-gourmet">Sistema Robusto y Alto Alcance</h4>
+                        <p class="text-gray-600">La marca estará en Uniformes, Múltiples Estaciones/Carritos y publicidad. Se creará un sistema de identidad completo y escalable para garantizar su aplicación consistente.</p>
+                    </div>
+
+                    <!-- Punto 3-->
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-gourmet text-center">
+                        <div class="text-3xl text-gourmet mb-3">
+                            <span class="material-icons text-5xl">diamond</span>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2 text-gourmet">Maestría en Sabores: Comunicación de la Dedicación</h4>
+                        <p class="text-gray-600">El diseño amplificará la "dedicación y esfuerzo" para que la audiencia perciba la profundidad y calidad de la experiencia Yamika.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Sección de Paquetes-->
+        <section id="paquetes" class="bg-gray-100 px-4 py-16 md:py-24">
+            <div class="container mx-auto max-w-6xl">
+                <div class="text-center mb-12">
+                    <span class="text-gourmet font-bold uppercase tracking-widest">Inversión</span>
+                    <h3 class="text-3xl md:text-4xl font-bold text-premium mt-2">
+                        Paquetes de Crecimiento Estratégico
+                    </h3>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Tres niveles de inversión y servicio, estructurados específicamente para resolver los distintos alcances y desafíos estratégicos del negocio Yamika.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:items-start">
+
+                    <!-- Paquete 1-->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transition duration-300 hover:shadow-xl">
+                        
+                        <div class="text-left mb-4">
+                            <h4 class="text-xl font-extrabold text-premium">Identidad Esencial</h4>
+                            <p class="text-gray-500 mt-0 mb-3">Establece el diseño base y los fundamentos visuales para iniciar tu marca</p>
+                            <div class="text-3xl font-bold text-gourmet">
+                                $6,100 <span class="text-base text-gray-500 font-normal">MXN</span>
+                            </div>
+                        </div>
+
+                        <div class="divider-line my-4"></div>
+
+                        <!-- Descripciones-->
+                        <ul class="space-y-3 text-gray-700 pb-4">
+                            <li class="flex items-start font-semibold text-premium">
+                                Identidad Visual
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Diseño de logotipo principal (1 Color).
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Diseño de Isotipo/Símbolo (Elemento independiente del texto).
+                            </li>
+                            <li class="flex items-start font-semibold text-premium">
+                                Sistema de Marca
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Logo en RGB (Pantallas) y CMYK (Impresión).
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Archivos fuentes editables (.AI, .EPS, .SVG).
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Archivos de salida (Formatos para pantallas e impresión, .PNG, .JPG).
+                            </li>
+                        </ul>
+
+                        <div class="divider-line my-4"></div>
+
+                        <!-- Botón-->
+                        <div class="pt-4">
+                            <a href="#contacto" class="w-full block text-center py-3 bg-gourmet text-white font-bold rounded-lg shadow-lg hover:bg-opacity-90 transition duration-300">
+                                Elegir este Paquete
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Paquete 2-->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transition duration-300 hover:shadow-xl">
+                        
+                        <div class="text-left mb-4">
+                            <h4 class="text-xl font-extrabold text-premium">Identidad Estratégica</h4>
+                            <p class="text-gray-500 mt-0 mb-3">Define el posicionamiento de alto impacto y el sistema de diseño para plataformas digitales</p>
+                            <div class="text-3xl font-bold text-gourmet">
+                                $11,500 <span class="text-base text-gray-500 font-normal">MXN</span>
+                            </div>
+                        </div>
+
+                        <div class="divider-line my-4"></div>
+
+                        <!-- Descripciones-->
+
+                         <div class="mb-4 p-3 bg-gray-50 rounded-lg border border-gray-200">
+                            <p class="font-semibold text-sm text-premium flex items-center">
+                                <span class="material-icons text-lg text-gourmet mr-2">stars</span>
+                                Incluye todo el Paquete de Identidad Esencial (Paquete 1).
+                            </p>
+                        </div>
+
+                        <ul class="space-y-3 text-gray-700 pb-4">
+                            <li class="flex items-start font-semibold text-premium">
+                                Identidad Visual
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Logotipos Secundarios/Alternativos (Ejemplo: Logo en horizontal, apilado).
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Variación de color (blanco, negro, color invertido).
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Logotipo responsivo.
+                            </li>
+                            <li class="flex items-start font-semibold text-premium">
+                                Sistema de Marca
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Paleta de colores RGB (Pantallas) y CMYK (Impresión).
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Tipografías (Fuentes recomendadas).
+                            </li>
+                        </ul>
+
+                        <div class="divider-line my-4"></div>
+
+                        <!-- Botón-->
+                        <div class="pt-4">
+                            <a href="#contacto" class="w-full block text-center py-3 bg-gourmet text-white font-bold rounded-lg shadow-lg hover:bg-opacity-90 transition duration-300">
+                                Elegir este Paquete
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Paquete 3-->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transition duration-300 hover:shadow-xl">
+                        
+                        <div class="text-left mb-4">
+                            <h4 class="text-xl font-extrabold text-premium">Sistema de Marca Total</h4>
+                            <p class="text-gray-500 mt-0 mb-3">Asegura la coherencia total e incluye el diseño para todas las aplicaciones físicas</p>
+                            <div class="text-3xl font-bold text-gourmet">
+                                $58,000 <span class="text-base text-gray-500 font-normal">MXN</span>
+                            </div>
+                        </div>
+
+                        <div class="divider-line my-4"></div>
+
+                        <!-- Descripciones-->
+
+                        <div class="mb-4 p-3 bg-gray-50 rounded-lg border border-gray-200">
+                            <p class="font-semibold text-sm text-premium flex items-center">
+                                <span class="material-icons text-lg text-gourmet mr-2">stars</span>
+                                Incluye todo el paquete de Identidad Esencial E Identidad Estratégica (Paquetes 1 y 2).
+                            </p>
+                        </div>
+
+                        <ul class="space-y-3 text-gray-700 pb-4">
+                            <li class="flex items-start font-semibold text-premium">
+                                Diseño para Aplicaciones Físicas*
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Tarjetas de presentación.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Hojas membretadas.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Uniformes.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Menú digital.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Etiquetas y Packaging.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Sellos.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Propuesta 3D de barra con logo e identidad de marca.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Mockups (vista previa de las aplicaciones físicas).
+                            </li>
+                            <li class="flex items-start font-semibold text-premium">
+                                Diseño para Aplicaciones Digitales
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Diseño de Banners/Portadas para plataformas principales.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Plantillas para Contenido (Historias, reels, publicaciones, etc.).
+                            </li>
+                            <li class="flex items-start font-semibold text-premium">
+                                Manual de Identidad de Marca:
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Guía de uso de logotipo.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Sistema de logotipos.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Reglas de usos para impresión.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Reglas de uso del logotipo en redes sociales.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Guía de tono de voz para redes sociales.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="material-icons text-lg text-gourmet mr-2 mt-1">check</span> Elementos gráficos extra (Iconografía, elementos decorativos, patrones y texturas).
+                            </li>
+                        </ul>
+                        <span class="italic text-xs text-gray-500 block mt-1">*El alcance incluye el diseño de archivos finales y especificaciones listos para producción. No incluye los costos ni la gestión de impresión, producción o montaje físico</span>
+
+                        <div class="divider-line my-4"></div>
+
+                        <!-- Botón-->
+                        <div class="pt-4">
+                            <a href="#contacto" class="w-full block text-center py-3 bg-gourmet text-white font-bold rounded-lg shadow-lg hover:bg-opacity-90 transition duration-300">
+                                Elegir este Paquete
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Justificación del Paquete Recomendado-->
+        <section class="bg-premium px-4 py-16 md:py-20">
+            <div class="container mx-auto max-w-4xl text-center text-white">
+                <h3 class="text-3xl md:text-4xl font-bold mb-4">
+                    La Solución Óptima para el Crecimiento de Yamika
+                </h3>
+                <p class="text-xl leading-relaxed text-gray-300">
+                    Se han estructurado tres niveles de servicio que responden a la complejidad de <span class="text-gourmet font-bold">Yamika</span>. <span class="font-semibold text-white">Elige el que corresponda a tus metas y da el siguiente paso.</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- 5. Pasos Siguientes / Contacto -->
+        <section id="contacto" class="container mx-auto px-4 py-16 md:py-24 max-w-4xl text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-premium mb-6">
+                ¿Lista para elevar la experiencia Yamika?
+            </h3>
+            <p class="text-lg text-gray-600 mb-8">
+                Es momento de revisar la propuesta, aclarar tus dudas sobre la estrategia de marca y establecer los próximos pasos.
+            </p>
+            
+            <!-- Botón de Contacto Final -->
+            <a href="#" class="inline-block px-10 py-4 bg-gourmet text-white text-xl font-bold rounded-lg shadow-xl hover:bg-opacity-90 transition duration-300 transform hover:scale-105">
+                Iniciar Conversación
+            </a>
+
+            <!-- Testimonial (Opcional) -->
+            <div class="mt-16 pt-8 border-t border-gray-200">
+                <p class="italic text-gray-500">
+                    "El diseño es la forma en que el contenido se vuelve útil. Y la utilidad de un diseño depende de si este funciona como un embajador silencioso de tu marca."
+                </p>
+                <p class="mt-2 font-semibold text-premium">Paul Rand</p>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="bg-premium text-gray-400 text-center py-8">
+        <p class="text-sm">Propuesta de Identidad de Marca para Yamika</p>
+    </footer>
+
+</body>
+</html>
